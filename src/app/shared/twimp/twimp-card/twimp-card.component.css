@@ -1,0 +1,92 @@
+.twimp {
+    background-color: #fff;
+    color: #666;
+    position: relative;
+    border-radius: 15px;
+    margin: 0 1em 1em 1em;
+    box-sizing: border-box;
+    max-width: 768px;
+}
+
+.twimp_header {
+    width: 100%;
+    height: 100px;
+}
+
+.twimp_header_img {
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.twimp_header_name {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.twimp_header_date {
+    position: absolute;
+    left: 100px;
+    top: 55px;
+    font-size: 80%;
+}
+
+.twimp_content {
+    width: 90%;
+    margin: 0 auto 2em;
+}
+
+.twimp_line {
+    width: 90%;
+    margin: 0 auto;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    margin-top: 0.5em;
+}
+
+.twimp_fav {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1em;
+}
+
+.fav_icon {
+    color: #666;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .35s ease-in-out
+}
+
+.fav_icon-selected, .fav_icon:hover {
+    color: #d94f5c;
+    font-weight: bold;
+    font-size: 35px;
+    transition: .35s ease-in-out;
+}
+
+.fav_icon-selected, .fav_icon-selected:active {
+    font-size: 30px;
+    transition: .35s ease-in-out
+}
+
+
+/* RESPONSIVE
+   ========================================================================= */
+
+
+/* Moviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .twimp {
+        margin: 0 auto 1em auto;
+    }
+}

@@ -1,0 +1,39 @@
+<section class="main section_signup">
+
+  <div class="signup_box rubberBand">
+    <img class="signup_image" src="assets/images/google-icon.png">
+    <form class="signup_form" [formGroup]="newUserForm" (ngSubmit)="signUp(newUserForm)">
+      <!-- NICK -->
+      <label class="signup_form_label">Introduce tu nick:*</label>
+      <div class="signup_form_error" *ngIf="newUserForm.get('idAuthor')!.hasError('required') && !newUserForm.get('idAuthor')!.pristine">
+        El nick es obligatorio
+      </div>
+      <div class="signup_form_error" *ngIf="newUserForm.get('idAuthor')!.hasError('invalidNick') && !newUserForm.get('idAuthor')!.pristine">
+        El nick sólo puede contener números y letras
+      </div>
+      <div class="signup_form_error" *ngIf="userAlreadyExist">
+        Ya existe un usuario con este nick
+      </div>
+      <input type="text" class="signup_form_input-text" formControlName="idAuthor">
+      <!-- NICK -->
+
+      <!-- FULL NAME -->
+      <label class="signup_form_label">Introduce tu nombre:*</label>
+      <div class="signup_form_error" *ngIf="newUserForm.get('fullName')!.hasError('required') && !newUserForm.get('fullName')!.pristine">
+        El nombre es obligatorio
+      </div>
+      <div class="signup_form_error" *ngIf="newUserForm.get('fullName')!.hasError('minlength') && !newUserForm.get('fullName')!.pristine">
+        Tu nombre debe tener como mínimo 3 carácteres
+      </div>
+      <input type="text" class="signup_form_input-text" formControlName="fullName">
+      <!-- FULL NAME -->
+
+      <!-- IMAGE -->
+      <label class="signup_form_label">Añade una URL para tu imagen de perfil:</label>
+      <input type="url" class="signup_form_input-text" formControlName="image">
+      <!-- IMAGE -->
+      <button type="submit" class="signup_button" [disabled]="newUserForm.invalid">Registrarme</button>
+    </form>
+  </div>
+
+</section>

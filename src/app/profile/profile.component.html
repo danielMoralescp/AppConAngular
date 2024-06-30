@@ -1,0 +1,15 @@
+<section class="main profile_section">
+
+    <section class="profile_author">
+        <tweempus-author-card [author]="author!"></tweempus-author-card>
+    </section>
+
+    <section class="profile_twimps">
+       <router-outlet></router-outlet>
+    </section>
+
+    <section *ngIf="checkLogin()">
+        <a class="profile_edit_icon" routerLink="/profile/{{author?.id}}/edit">&#9998;</a>
+    </section>
+
+</section>

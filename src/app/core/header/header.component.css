@@ -1,0 +1,21 @@
+.section-header {
+    width: 100%;
+    background: white;
+}
+
+.header_title {
+    margin: 0;
+    padding: 0.5em 3em 0;
+    color: #d94f5c;
+    background: url(../../../assets/images/logo-top.png) no-repeat 5px 5px;
+    min-height: 60px;
+    text-indent: -9999px;
+}
+
+.header_auth {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    border: none;
+    background-color: white;
+}

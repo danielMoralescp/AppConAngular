@@ -1,0 +1,19 @@
+<section class="twimp">
+
+	<div class="twimp_header">
+		<img class="twimp_header_img" [src]="twimp.author.image" alt="Imagen de un twimp">
+		<a class="twimp_header_name" [href]="twimp.author.url">by {{twimp.author.fullName}}</a>
+		<div class="twimp_header_date">Published on {{twimp.timestamp}}</div>
+	</div>
+
+	<div class="twimp_content">
+		{{twimp.content}}
+	</div>
+
+	<hr class="twimp_line">
+
+	<div class="twimp_fav">
+		<a class="fav_icon" [ngClass]="{'fav_icon-selected': twimp.favorite}" (click)="setFavoriteTwimp()">&#10084;</a>
+	</div>
+
+</section>

@@ -1,0 +1,25 @@
+<section class="section_edit-profile">
+
+  <div class="edit-profile_box rubberBand">
+    <img class="edit-profile_image" src="assets/images/google-icon.png">
+    <form class="edit-profile_form" [formGroup]="editUserForm" (ngSubmit)="editProfile(editUserForm)">
+      <!-- FULL NAME -->
+      <label class="edit-profile_form_label">Introduce tu nombre:*</label>
+      <div class="edit-profile_form_error" *ngIf="editUserForm.get('fullName')!.hasError('required') && !editUserForm.get('fullName')!.pristine">
+        El nombre es obligatorio
+      </div>
+      <div class="edit-profile_form_error" *ngIf="editUserForm.get('fullName')!.hasError('minlength') && !editUserForm.get('fullName')!.pristine">
+        Tu nombre debe tener como mínimo 3 carácteres
+      </div>
+      <input type="text" class="edit-profile_form_input-text" formControlName="fullName">
+      <!-- FULL NAME -->
+
+      <!-- IMAGE -->
+      <label class="edit-profile_form_label">Añade una URL para tu imagen de perfil:</label>
+      <input type="url" class="edit-profile_form_input-text" formControlName="image">
+      <!-- IMAGE -->
+      <button type="submit" class="edit-profile_button" [disabled]="editUserForm.invalid">Registrarme</button>
+    </form>
+  </div>
+
+</section>

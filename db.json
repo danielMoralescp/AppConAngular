@@ -1,0 +1,93 @@
+{
+  "authors": [
+    {
+      "id": "1",
+      "fullName": "David East",
+      "image": "https://randomuser.me/api/portraits/men/83.jpg"
+    },
+    {
+      "id": "2",
+      "fullName": "David Teitelbaum",
+      "image": "https://randomuser.me/api/portraits/men/82.jpg"
+    },
+    {
+      "id": "rgwer",
+      "fullName": "eeff",
+      "image": "efefef"
+    },
+    {
+      "id": "fbbenb",
+      "fullName": "grrge",
+      "image": "rgerrber"
+    },
+    {
+      "id": "sabry",
+      "fullName": "Sabrina",
+      "image": "sa"
+    }
+  ],
+  "authenticated": [],
+  "twimps": [
+    {
+      "id": "Mx5Cf1483389903318",
+      "author": "1",
+      "by": "David East",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur sodales libero, sit amet posuere arcu consectetur ut. Nam volutpat ligula ac nunc consectetur vestibulum.",
+      "timestamp": "01-01-2023"
+    },
+    {
+      "id": "T4qdo1483390015454",
+      "author": "2",
+      "by": "David Teitelbaum",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur sodales libero, sit amet posuere arcu consectetur ut. Nam volutpat ligula ac nunc consectetur vestibulum.",
+      "timestamp": "01-01-2023"
+    },
+    {
+      "id": "2",
+      "author": "fbbenb",
+      "by": "Author",
+      "content": "jboquvobfp\nbvwmjn`´m\n´m\nk,\nk,w\nmv´n´`on´`k\n´,\n´,k\nwn`´m´`pno prñfnbvm",
+      "timestamp": "5-12-2024"
+    }
+  ],
+  "author-favorites": [
+    {
+      "id": "1",
+      "twimps": [
+        "T4qdo1483390015454"
+      ]
+    },
+    {
+      "id": "2",
+      "twimps": [
+        "Mx5Cf1483389903318"
+      ]
+    },
+    {
+      "id": "fbbenb",
+      "twimps": [
+        "Mx5Cf1483389903318"
+      ]
+    },
+    {
+      "id": "sabry",
+      "twimps": [
+        "2"
+      ]
+    }
+  ],
+  "author-twimps": [
+    {
+      "id": "1",
+      "twimps": [
+        "Mx5Cf1483389903318"
+      ]
+    },
+    {
+      "id": "2",
+      "twimps": [
+        "T4qdo1483390015454"
+      ]
+    }
+  ]
+}

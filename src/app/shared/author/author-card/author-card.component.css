@@ -1,0 +1,123 @@
+/*********************
+*   PERFIL
+**********************/
+
+.author_card {
+    width: 100%;
+    background-color: white;
+    border-top: 75px solid #d94f5c;
+    position: relative;
+    transition: .35s ease-in-out
+}
+
+.author_data {
+    border: none;
+    background-color: #fff;
+    border-radius: 4px 0px;
+}
+
+.author_data_img {
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 140px;
+    max-height: 140px;
+    border: 5px solid #fff;
+    margin: 1rem;
+    position: absolute;
+    top: -75px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.35);
+}
+
+.author_data_name {
+    background-color: white;
+    margin: 1em 0.5em 2em 7.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 56px;
+}
+
+.author_nav {
+    margin: 1rem 1rem 0 1rem;
+}
+
+
+/* para pantallas pequeñas flex cambia a row */
+
+.author_nav_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0.5em;
+}
+
+
+/*para pantallas pequeñas el width debe de ser del 50%*/
+
+.author_nav_list_item {
+    display: inline;
+}
+
+.author_nav_list_item-selected {
+    color: #d94f5c;
+    font-weight: bold;
+}
+
+.author_nav_list_item:last-child {}
+
+.author_nav_list_link {
+    display: inline-block;
+    padding: 0.5em;
+    list-style-position: inside;
+    width: auto;
+    background-color: white;
+    color: #666;
+    border-bottom: 4px solid #fff;
+    margin-right: 0.2em;
+    font-weight: bold;
+    font-size: 95%;
+    text-decoration: none;
+}
+
+.author_nav_list_link:hover {
+    color: #d94f5c;
+    font-weight: bold;
+    transition: .15s ease-in-out
+}
+
+.author_nav_list_item-selected .author_nav_list_link {
+    border-color: #d94f5c;
+    color: #d94f5c;
+    font-weight: bold;
+    transition: .15s ease-in-out
+}
+
+
+/* RESPONSIVE
+   ========================================================================= */
+
+
+/* Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .author_card {
+        box-sizing: border-box;
+        width: 30%;
+        min-width: 235px;
+        float: left;
+        border-radius: 1em;
+        margin-right: 2%;
+        transition: .35s ease-in-out
+    }
+    .author_data_name {
+        margin: 120px 0.5em 0.5em 0.9em;
+        transition: .35s ease-in-out;
+    }
+    .author_nav_list {
+        margin-bottom: 1em;
+    }
+}

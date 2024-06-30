@@ -1,0 +1,23 @@
+<section class="author_card">
+
+  <div class="author_data">
+    <div class="author_data_img_wrap">
+      <img class="author_data_img" [src]="author?.image" alt="Imagen del usuario">
+    </div>
+    <div class="author_data_name">
+      {{author?.fullName}}
+    </div>
+  </div>
+
+  <nav class="author_nav">
+    <ul class="author_nav_list">
+      <li class="author_nav_list_item" routerLinkActive="author_nav_list_item-selected">
+        <a class="author_nav_list_link" routerLink="/profile/{{author?.id}}/my-twimps">Mis Twits</a>
+      </li>
+      <li class="author_nav_list_item" routerLinkActive="author_nav_list_item-selected">
+        <a class="author_nav_list_link" routerLink="/profile/{{author?.id}}/favorite-twimps">Mis Favoritos</a>
+      </li>
+    </ul>
+  </nav>
+
+</section>
